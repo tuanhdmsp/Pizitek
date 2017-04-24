@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Testing.Dashboard"
+             xmlns:custom="clr-namespace:Testing;assembly=Testing" >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Call" Icon="notification.png" Order="Primary"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="Start" BackgroundColor="DodgerBlue">
+                <SearchBar Placeholder="Search" BackgroundColor="DodgerBlue" 
+                           TextColor="AntiqueWhite" PlaceholderColor="DarkGray" 
+                           CancelButtonColor="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                <Label Text="Google Maps here" TextColor="Black"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="End">
+                <Label Text="You don't have any parking slot nearby." TextColor="DarkGray"
+                   FontSize="18" Margin="0,0,0,8" HorizontalOptions="Center"/>
+                <custom:ToggleButton CheckedImage="on_toggle_button.png" UnCheckedImage="off_toggle_button.png" 
+                                     Enabled="True" HeightRequest="70" 
+                                     WidthRequest="380" HorizontalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
