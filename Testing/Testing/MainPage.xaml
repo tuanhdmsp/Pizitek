@@ -6,7 +6,6 @@
     xmlns:local="clr-namespace:Testing;assembly=Testing"
     Title="Dashboard">
     <MasterDetailPage.Master>
-        <!-- Hamburger Menu Secret Sauce... Add an Icon!!!! Make sure it's in your resources for your Platform Project -->
         <NavigationPage Title="Navigation Bar" Icon="hamburger.png" BarBackgroundColor="Teal" HasBackButton="False" HasNavigationBar="False">
             <x:Arguments>
                 <ContentPage Title="Menu">
